@@ -1,0 +1,6 @@
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\bin\Debug\DrugWarez.exe.config
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\bin\Debug\DrugWarez.exe
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\bin\Debug\DrugWarez.pdb
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\obj\Debug\DrugWarez.csprojResolveAssemblyReference.cache
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\obj\Debug\DrugWarez.exe
+c:\users\sroyalwin7\documents\visual studio 2012\Projects\DrugWarez\DrugWarez\obj\Debug\DrugWarez.pdb
