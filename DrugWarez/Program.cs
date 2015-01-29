@@ -41,22 +41,24 @@ namespace DrugWarez
                         //How Much Weed you want to buy
                         if (input == "1")
                         {
-                            Console.WriteLine("How much Weed do you want to buy? ");
-                            input = Console.ReadLine();
-                            amount = Convert.ToInt32(input);
-                            //drgPrice.WeedAmount = amount;
-                            amount = drgPrice.WeedStashCalculator(amount);
-                            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.WeedAmount);
+                            drgPrice.BuyWeed();
+                            //Console.WriteLine("How much Weed do you want to buy? ");
+                            //input = Console.ReadLine();
+                            //amount = Convert.ToInt32(input);
+                            ////drgPrice.WeedAmount = amount;
+                            //amount = drgPrice.WeedStashCalculator(amount);
+                            //Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.WeedAmount);
                         }
                         //How much Crack you want to buy
                         else if (input == "2")
                         {
-                            Console.WriteLine("How much Crack do you want to buy? ");
-                            input = Console.ReadLine();
-                            amount = Convert.ToInt32(input);
-                            //drgPrice.CrackAmount = amount;
-                            amount = drgPrice.CrackStashCalulator(amount);
-                            Console.WriteLine("You bought: " + input + " of crack for a total of: " + amount + "and have: " + drgPrice.CrackAmount);
+                            drgPrice.BuyCrack();
+                            //Console.WriteLine("How much Crack do you want to buy? ");
+                            //input = Console.ReadLine();
+                            //amount = Convert.ToInt32(input);
+                            ////drgPrice.CrackAmount = amount;
+                            //amount = drgPrice.CrackStashCalulator(amount);
+                            //Console.WriteLine("You bought: " + input + " of crack for a total of: " + amount + "and have: " + drgPrice.CrackAmount);
                         }
                     }
 
@@ -74,22 +76,24 @@ namespace DrugWarez
                         //Sell Weed
                         if (input == "1")
                         {
-                            Console.WriteLine("How much weed do you want to sell?");                           
-                            input = Console.ReadLine();
-                            amount = Convert.ToInt32(input);
-                            drgPrice.bankTotal = drgPrice.SellDrugs(amount);
-                            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.WeedAmount);
+                            drgPrice.SellWeed();
+                            //Console.WriteLine("How much weed do you want to sell?");                           
+                            //input = Console.ReadLine();
+                            //amount = Convert.ToInt32(input);
+                            //drgPrice.bankTotal = drgPrice.SellDrugs(amount);
+                            //Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.WeedAmount);
                             
                         }
 
                         //Sell Crack
                         if (input == "2")
                         {
-                            Console.WriteLine("How much crack do you want to sell?");
-                            input = Console.ReadLine();
-                            amount = Convert.ToInt32(input);
-                            drgPrice.bankTotal = drgPrice.SellDrugs(amount);
-                            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.CrackAmount);
+                            drgPrice.SellCrack();
+                            //Console.WriteLine("How much crack do you want to sell?");
+                            //input = Console.ReadLine();
+                            //amount = Convert.ToInt32(input);
+                            //drgPrice.bankTotal = drgPrice.SellDrugs(amount);
+                            //Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + drgPrice.CrackAmount);
 
                         }
                     }

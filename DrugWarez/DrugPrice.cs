@@ -17,6 +17,7 @@ namespace DrugWarez
         public string sellInput;
         public int coatPockets = 0;
         public string input;
+        public int amount;
 
         //Random price creator for each neighborhood
         public int WeedPriceGenerator()
@@ -85,7 +86,46 @@ namespace DrugWarez
             Console.WriteLine("You have entered Uptown...\n Do you want to? \n 1) buy Drugs \n 2) Sell Drugs");
             input = Console.ReadLine();
         }
+        //Buy Weed
+        public void BuyWeed()
+        {
+            Console.WriteLine("How much Weed do you want to buy? ");
+            input = Console.ReadLine();
+            amount = Convert.ToInt32(input);
+            //WeedAmount = amount;
+            amount = WeedStashCalculator(amount);
+            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + WeedAmount);
+        }
+        //Buy Crack
+        public void BuyCrack()
+        {
+            Console.WriteLine("How much Crack do you want to buy? ");
+            input = Console.ReadLine();
+            amount = Convert.ToInt32(input);
+            //CrackAmount = amount;
+            amount = CrackStashCalulator(amount);
+            Console.WriteLine("You bought: " + input + " of crack for a total of: " + amount + "and have: " + CrackAmount);
+        }
 
-        
+        //Sell Weed
+        public void SellWeed()
+        {
+            Console.WriteLine("How much weed do you want to sell?");
+            input = Console.ReadLine();
+            amount = Convert.ToInt32(input);
+            bankTotal = SellDrugs(amount);
+            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + WeedAmount);
+
+        }
+        //Sell Crack
+        public void SellCrack()
+        {
+            Console.WriteLine("How much crack do you want to sell?");
+            input = Console.ReadLine();
+            amount = Convert.ToInt32(input);
+            bankTotal = SellDrugs(amount);
+            Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + CrackAmount);
+
+        }
     }
 }
