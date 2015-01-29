@@ -92,7 +92,6 @@ namespace DrugWarez
             Console.WriteLine("How much Weed do you want to buy? ");
             input = Console.ReadLine();
             amount = Convert.ToInt32(input);
-            //WeedAmount = amount;
             amount = WeedStashCalculator(amount);
             Console.WriteLine("You bought: " + input + " of weed for a total of: " + amount + "and have: " + WeedAmount);
         }
@@ -102,7 +101,6 @@ namespace DrugWarez
             Console.WriteLine("How much Crack do you want to buy? ");
             input = Console.ReadLine();
             amount = Convert.ToInt32(input);
-            //CrackAmount = amount;
             amount = CrackStashCalulator(amount);
             Console.WriteLine("You bought: " + input + " of crack for a total of: " + amount + "and have: " + CrackAmount);
         }
